@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Evolution Review"
+  short_description: "Diagnose and improve skills without ad hoc patches"
+  default_prompt: "Use $skill-evolution-review to diagnose this skill failure or trigger overreach and decide whether to update SKILL.md, references, output format, checklist, or scripts."
