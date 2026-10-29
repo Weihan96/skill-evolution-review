@@ -71,7 +71,7 @@ Only that downloaded, verified release package may supply the new global install
 
 Official/system and third-party managed skills retain their ownership and update boundaries. Report detected checkout problems without moving or rewriting managed content absent explicit authorization and a compatible provider update path. Prefer a personal companion for personal rules.
 
-**Self-bootstrap order:** Complete this skill's own development → authorized release → verified download → installation → post-install verification cycle first. Then re-read the newly installed instructions before handling `git-graph-browser`, and only within that task's authorization. If release destination/visibility is pending, stop at local preparation: no global replacement and no edits to `git-graph-browser`.
+**One-time bootstrap order for the initial migration:** Complete this skill's own development → authorized release → verified download → installation → post-install verification cycle, then re-read the newly installed instructions. In the original migration sequence, this precedes any separately authorized `git-graph-browser` migration; stop after this skill when that is the current scope. This is a one-time ordering constraint, not a permanent dependency on `git-graph-browser` or a prerequisite for unrelated skills. For any release whose destination/visibility is pending, complete local preparation and wait before publication or global replacement.
 
 ## Reference Routing
 

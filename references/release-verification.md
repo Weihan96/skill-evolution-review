@@ -21,7 +21,7 @@ Before external publication, record:
 - Full commit ID and optional tag resolved to that commit; validation results and a reviewed package inclusion list.
 - Package layout, expected files/modes, source-content manifest and exclusions. Include all referenced runtime resources, omit Git storage and incidental local files. Never blindly package a dirty tree.
 
-Use the commit as the source identity rather than writing a self-referential commit ID into the commit itself. Record the final commit, release URL, version, archive checksum and manifest in release metadata or an external installation receipt. Keep the receipt outside the payload, so installed files can exactly match the package. For this initial local-only preparation, no release URL/hash or successful installation may be invented.
+Use the commit as the source identity rather than writing a self-referential commit ID into the commit itself. Record the final commit, release URL, version, archive checksum and manifest in release metadata or an external installation receipt. Keep the receipt outside the payload, so installed files can exactly match the package. Report only observed release URLs, hashes and installation outcomes.
 
 ## Download and validate before extraction/replacement
 
@@ -44,4 +44,4 @@ Replace only the selected skill, retaining a recoverable old version outside dis
 
 If pre-replacement validation fails, leave the old version active. If post-replacement checks fail, restore the preserved old version, keep the failed candidate isolated for diagnosis, verify the restored content/state and report rollback. A legacy checkout restored during rollback remains a known unresolved migration issue; it is not a compliant new installation. If restoration itself fails, report the exact state and backup location without claiming success. Never delete recovery copies automatically.
 
-For self-bootstrap, successful installation of `skill-evolution-review` and re-reading that installation precede any separately authorized `git-graph-browser` work. Pending publication means neither step has occurred.
+For the one-time initial migration, successful installation of `skill-evolution-review` and re-reading that installation precede any separately authorized `git-graph-browser` migration. Stop after this skill if that is the authorized scope. This historical sequence is not a permanent cross-skill prerequisite; subsequent releases and unrelated skills follow their own scope and authorization.
